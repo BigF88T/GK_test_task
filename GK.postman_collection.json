@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "f4583cf5-d5ae-400e-a9e4-4a097b15377f",
+		"name": "GK",
+		"description": "Коллекция запросов содержит эндпоинты для взаимодействия с API приложения.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41536566"
+	},
+	"item": [
+		{
+			"name": "Email CRUD",
+			"item": [
+				{
+					"name": "Update Email Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZ29yQG1haWwuY29tIiwiaWQiOjEsImlhdCI6MTc0NjAwNjg0MSwiZXhwIjoxNzQ2MDE1MjQxfQ.JdSGbPHntzSxe4F4lJvHrnNgV8eTYKlV2uOuOlfZwNDzodHtdWMWCUB6zQB3buwsCwmgSKwqZq2gEp6CUmNEOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editableEmail\" : \"newEmail@mail.com\",\r\n    \"newEmail\" : \"exampleUpdate@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/emails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"emails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Email Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZ29yQG1haWwuY29tIiwiaWQiOjEsImlhdCI6MTc0NjAwNjg0MSwiZXhwIjoxNzQ2MDE1MjQxfQ.JdSGbPHntzSxe4F4lJvHrnNgV8eTYKlV2uOuOlfZwNDzodHtdWMWCUB6zQB3buwsCwmgSKwqZq2gEp6CUmNEOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"exampleUpdate@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/emails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"emails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Email Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZ29yQG1haWwuY29tIiwiaWQiOjEsImlhdCI6MTc0NjAwNjg0MSwiZXhwIjoxNzQ2MDE1MjQxfQ.JdSGbPHntzSxe4F4lJvHrnNgV8eTYKlV2uOuOlfZwNDzodHtdWMWCUB6zQB3buwsCwmgSKwqZq2gEp6CUmNEOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"newEmail@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/emails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"emails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phone CRUD",
+			"item": [
+				{
+					"name": "New Phone Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbGVnQG1haWwuY29tIiwiaWQiOjIsImlhdCI6MTc0NjA3NTI5NCwiZXhwIjoxNzQ2MDgzNjk0fQ.e5tLSJh-vuYdXHVDSUA_b-w_rjMDsSkQkiJEbEiCjF7_xjnD5L7iGLAXrD_7-9k_4zE9scDxmAcNcPrMZzFJtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\" : \"79009009090\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/phones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"phones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Phone Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbGVnQG1haWwuY29tIiwiaWQiOjIsImlhdCI6MTc0NjA3NTI5NCwiZXhwIjoxNzQ2MDgzNjk0fQ.e5tLSJh-vuYdXHVDSUA_b-w_rjMDsSkQkiJEbEiCjF7_xjnD5L7iGLAXrD_7-9k_4zE9scDxmAcNcPrMZzFJtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editableNumber\" : \"79009009090\",\r\n    \"newNumber\" : \"79009008091\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/phones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"phones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Phone Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbGVnQG1haWwuY29tIiwiaWQiOjIsImlhdCI6MTc0NjA3NTI5NCwiZXhwIjoxNzQ2MDgzNjk0fQ.e5tLSJh-vuYdXHVDSUA_b-w_rjMDsSkQkiJEbEiCjF7_xjnD5L7iGLAXrD_7-9k_4zE9scDxmAcNcPrMZzFJtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\" : \"79009008091\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/phones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"phones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Find User By Param",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 401\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(401);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response content type is text/plain\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.equal(\"text/plain\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response body contains the expected message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Не авторизован - передайте JWT токен\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is within an acceptable range\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbGVnQG1haWwuY29tIiwiaWQiOjIsImlhdCI6MTc0NjA3NTI5NCwiZXhwIjoxNzQ2MDgzNjk0fQ.e5tLSJh-vuYdXHVDSUA_b-w_rjMDsSkQkiJEbEiCjF7_xjnD5L7iGLAXrD_7-9k_4zE9scDxmAcNcPrMZzFJtw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/find?phone=79009009090",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"find"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "user_per_page",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "date_of_birth",
+									"value": "10.05.1999",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "79009009090"
+								},
+								{
+									"key": "email",
+									"value": "oleg@mail.com",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Egor",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login By Mail Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"egor@mail.com\",\r\n    \"password\" : 12345678\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login By Phone number Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\" : \"79009009090\",\r\n    \"password\" : \"87654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login/phone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login",
+								"phone"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transfers",
+			"item": [
+				{
+					"name": "Begin tranfer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbGVnQG1haWwuY29tIiwiaWQiOjIsImlhdCI6MTc0NTk4NTcwMCwiZXhwIjoxNzQ1OTk0MTAwfQ.j4562-HV5xIMJeWFN_Ir-AWbYx1k1lCckpbYyrZVjXySI6yIhJk5MUZeV2-9JqUbbp4FVqw7DuncNKGvffVUIQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recipientId\" : 1,\r\n    \"amount\" : 2000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/transfers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transfers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

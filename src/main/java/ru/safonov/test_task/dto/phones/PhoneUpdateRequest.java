@@ -1,0 +1,14 @@
+package ru.safonov.test_task.dto.phones;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+
+public record PhoneUpdateRequest(
+        @NotBlank(message = "Номер телефона не должен быть пустым")
+        @Pattern(regexp = "^[78]\\d{10}$", message = "Номер телефона должен содержать 11 цифр и начинаться с 7 или 8")
+        String editableNumber,
+        @NotBlank(message = "Номер телефона не должен быть пустым")
+        @Pattern(regexp = "^[78]\\d{10}$", message = "Номер телефона должен содержать 11 цифр и начинаться с 7 или 8")
+        String newNumber
+) {
+}

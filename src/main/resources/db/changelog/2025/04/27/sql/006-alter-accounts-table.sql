@@ -1,0 +1,1 @@
+ALTER TABLE gk_task.accounts ADD COLUMN start_balance NUMERIC NOT NULL default 0.0;

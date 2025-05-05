@@ -1,0 +1,12 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="insert-data" author="SSaf">
+        <sqlFile path="sql/004-insert-users.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="sql/005-insert-phone-email-account.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

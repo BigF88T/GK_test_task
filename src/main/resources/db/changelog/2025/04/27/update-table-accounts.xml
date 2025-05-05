@@ -1,0 +1,12 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="update-table-accounts" author="SSaf">
+        <sqlFile path="sql/006-alter-accounts-table.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="sql/007-insert-account-data.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>
