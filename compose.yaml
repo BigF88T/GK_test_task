@@ -15,6 +15,16 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://gk_task/gk_task
 
 volumes:
   postgres_data:
